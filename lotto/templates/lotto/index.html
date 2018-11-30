@@ -1,0 +1,10 @@
+{% for lotto in lottos %}
+    <p>
+        <!--<a href="{{ lotto.id }}/read">-->
+        <a href="{% url 'read' lotto.id %}">
+        {{ lotto.id }} /
+        {{ lotto.title }} /
+        {{ lotto.lottos }}
+        </a>
+    </p>
+{% endfor %}
